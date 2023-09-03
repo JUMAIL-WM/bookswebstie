@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Border Color</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #000; /* Set the default border color for the table */
+    }
+    
+    th, td {
+      border: 1px solid #000; /* Set the default border color for the table cells */
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      color: black;
+    }
+    
+    /* Change the border color of the table and cells */
+    table.custom-border {
+      border-color: #ff0000; /* Set the desired border color */
+    }
+    
+    table.custom-border th, table.custom-border td {
+      border-color: #ff0000; /* Set the desired border color */
+    }
+  </style>
+</head>
+<body>
+  <!-- Table with default border color -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows -->
+    </tbody>
+  </table>
+  
+  <!-- Table with custom border color -->
+  <table class="custom-border">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows -->
+    </tbody>
+  </table>
+</body>
+</html>
